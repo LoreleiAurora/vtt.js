@@ -1,8 +1,8 @@
 {
   "author": "Andreas Gal <gal@mozilla.com>",
-  "name": "vtt.js",
+  "name": "@l5i/vtt.js",
   "description": "A JavaScript implementation of the WebVTT specification.",
-  "version": "0.13.0",
+  "version": "0.13.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/mozilla/vtt.js.git"
@@ -33,7 +33,9 @@
     "lib/vttcue.js",
     "lib/vttcue-extended.js",
     "lib/vttregion.js",
-    "lib/vttregion-extended.js"
+    "lib/vttregion-extended.js",
+    "dist/vtt.js",
+    "dist/vtt.min.js"
   ],
   "keywords": [
     "vtt",
@@ -44,7 +46,8 @@
     "text track"
   ],
   "scripts": {
-    "test": "./node_modules/.bin/grunt"
+    "test": "./node_modules/.bin/grunt",
+    "prepublish": "./node_modules/.bin/grunt build"
   },
   "license": "Apache-2.0"
 }
